@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default Title{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&family=Dosis:wght@200&family=Fira+Sans:ital,wght@0,100;0,400;1,400&family=IBM+Plex+Sans&family=Raleway:wght@100&family=Source+Sans+3:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&family=Dosis:wght@200&family=Fira+Sans:ital,wght@0,100;0,400;1,400&family=IBM+Plex+Sans&family=Raleway:wght@100&family=Righteous&family=Source+Sans+3:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&family=Dosis:wght@200&family=Fira+Sans:ital,wght@0,100;0,400;1,400&family=IBM+Plex+Sans&family=Raleway:wght@100&family=Righteous&family=Roboto:wght@100&family=Source+Sans+3:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&family=Dosis:wght@200&family=Fira+Sans:ital,wght@0,100;0,400;1,400&family=IBM+Plex+Sans&family=Montserrat:wght@100&family=Raleway:wght@100&family=Righteous&family=Roboto:wght@100&family=Source+Sans+3:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&family=Dosis:wght@200&family=Fira+Sans:ital,wght@0,100;0,400;1,400&family=IBM+Plex+Sans&family=Montserrat:wght@100&family=Raleway:wght@100&family=Righteous&family=Roboto:wght@100&family=Source+Sans+3:wght@200&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400&family=Dosis:wght@200&family=Fira+Sans:ital,wght@0,100;0,400;1,400&family=IBM+Plex+Sans&family=Montserrat:wght@100;500;600&family=Raleway:wght@100&family=Righteous&family=Roboto:wght@100&family=Source+Sans+3:wght@200&family=Space+Grotesk&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div style="background-color:#000000;height: 35px;"></div>
+        <div class="hdr">
+            <img src="{% static 'images/WhatsApp Image 2023-09-06 at 11.27 1.svg' %}" class="hdr-img">
+            <nav class="nav">
+                <a href="#" class="nav-link">Cakes</a>
+                <a href="#" class="nav-link">Order</a>
+                <a href="#" class="nav-link">Contact Us</a>
+                <a href="#" class="nav-link"><img src="{% static 'images/Vector1.svg' %}"></a>
+                <a href="#" class="nav-link"><img src="{% static 'images/Vector (1).svg' %}"></a>
+            </nav>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <img src="{% static 'images/WhatsApp Image 2023-09-06 at 11.27 1.svg' %}">
+        <div class="ftr-flex">
+            <a href="#" class="ftr-link">Home</a>
+            <a href="#" class="ftr-link">Stuffing</a>
+            <a href="#" class="ftr-link">Order</a>
+            <a href="#" class="ftr-link">Contact Us</a>
+        </div>
+        <div class="ftr-img">
+            <img src="{% static 'images/wtsapp.svg' %}">
+            <img src="{% static 'images/baseline-facebook (2) 2.svg' %}">
+            <img src="{% static 'images/instagram (2).svg' %}">
+            <img src="{% static 'images/x.svg' %}">
+        </div>
+        <hr class="ftr-hr">
+        <p class="ftr-p">Copyright cake walk</p>
+    </footer>
+</body>
+</html>
